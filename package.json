@@ -1,9 +1,17 @@
 {
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "verify": "node verify.js",
+    "serve": "concurrently \"npm run start\" \"npm run verify\""
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "morgan": "^1.10.0",
-    "wechat": "^2.1.0"
+    "wechat": "^2.1.0",
+    "concurrently": "^7.0.0"
   }
 }
